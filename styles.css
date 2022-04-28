@@ -767,6 +767,10 @@ body {
   color: #fff;
 }
 
+.subscribe-input:focus-visible {
+  outline: none;
+}
+
 .subscribe-input::placeholder {
   font-family: 'Roboto';
   font-style: normal;
