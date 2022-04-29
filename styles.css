@@ -108,7 +108,6 @@ body {
   background-color: var(--blue-color);
   position: absolute;
   bottom: 0;
-  /* transform: translateX(-100%); */
   border-radius: 2px;
   opacity: 0;
   transition-property: opacity;
@@ -135,6 +134,26 @@ body {
   height: 100%;
   display: flex;
   align-items: center;
+  position: relative;
+}
+
+.header-contact {
+  text-decoration: none;
+  fill: var(--gray-color);
+  transition-property: color, fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  height: 100%;
+  position: relative;
+  color: var(--gray-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  margin-right: 25px;
 }
   
 
@@ -144,19 +163,10 @@ body {
   fill: var(--blue-color);
 }
 
-.header-contact {
-  color: var(--gray-color);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  flex-shrink: 0;
-  display: flex;
-  align-items: center;
-}
-
-.header-contact {
-  margin-right: 25px;
+.header-contact:hover,
+.header-contact:focus {
+  color: var(--blue-color);
+  fill: var(--blue-color);
 }
 
 .header-contact:last-child {
@@ -789,6 +799,16 @@ body {
   margin-top: 20px;
 }
 
+.subscribe-icon {
+  height: 24px;
+  width: 24px;
+  margin-left: 10px;
+  }
+
+  .footer-btn-padding {
+    padding: 0;
+  }
+
 /*Modal*/
 .backdrop {
   position: fixed;
@@ -819,6 +839,7 @@ body {
   min-width: 528px;
   background-color: #fff;
   /* padding: 8px; */
+  padding: 40px;
 }
 
 .modal-close-btn {
@@ -832,6 +853,13 @@ body {
   position: absolute;
   top: 8px;
   right: 8px;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-close-btn:hover, .modal-close-btn:focus {
+  fill: var(--blue-color);
 }
 
 .modal-close-icon {
@@ -848,7 +876,7 @@ body {
 }
 
 .modal-title {
-  padding-top: 40px;
+  /* padding-top: 40px; */
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
@@ -861,8 +889,8 @@ body {
 }
 
 .modal-form {
-  padding-left: 40px;
-  padding-right: 40px;
+  /* padding-left: 40px;
+  padding-right: 40px; */
 }
 
 .modal-input {
@@ -983,6 +1011,9 @@ body {
   transition-property: background;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .modal-btn:hover, .modal-btn:focus {
